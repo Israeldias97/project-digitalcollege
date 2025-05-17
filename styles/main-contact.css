@@ -5,7 +5,6 @@ main #contact {
 }
 
 main #contact .content {
-    border: 1px solid red;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -23,7 +22,6 @@ main #contact .content h2 span{
     color: var(--cor-secundaria);
 }
 main #contact .content form{
-    border: 1px solid white   ;
     width: 100%;
     height: 30rem;
     display: flex;
@@ -34,3 +32,22 @@ main #contact .content form{
 main #contact .content form label{
     font-weight: 500;
 }
+
+main #contact .content form input,
+main #contact .content form textarea {
+    width: 100% ;
+    padding: 0.75rem;
+    background-color: #ffffff15;
+    border-radius: 0.47rem;
+    font-family: inherit;
+    border: 1px solid var(--cor-generica);
+    resize: none;
+    font-size: 1rem;
+}
+
+main #contact .content form input :focus,
+main #contact .content form textarea :focus {
+    outline: none;
+    border: 1px solid var(--cor-secundaria);
+}
+
